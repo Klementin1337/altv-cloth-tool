@@ -73,7 +73,7 @@ namespace AltTool
 
         private void ValidationTextBox(object sender, TextCompositionEventArgs e)
         {
-            Regex regex = new Regex(@"^[A-Za-z_]$");
+            Regex regex = new Regex(@"^[A-Za-z_0-9]$");
             e.Handled = !regex.IsMatch(e.Text);
         }
 
